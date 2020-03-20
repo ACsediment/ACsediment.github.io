@@ -1,3 +1,8 @@
+layout: page
+title: "Del Array Element In Java"
+date: 2020-02-18 10:12:34 -0000
+categories: Java
+
 ## Del Array Element In Java
 
 I found a peice of code that deletes a element from a Java Array. <br>
