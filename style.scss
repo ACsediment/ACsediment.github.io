@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $body-background;
-  font: 18px/1.4 $helvetica;
+  font: $global-font-family;
   color: $body-foreground;
 }
 
