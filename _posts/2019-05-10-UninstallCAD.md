@@ -1,11 +1,10 @@
 ---
 layout: post
-title: "Uninstall AutoCAD using batch"
+title: "Uninstall AutoCAD using batch | AutoCAD批量卸载脚本"
 date: 2019-05-10 18:23:21 -0000
 categories: Win
 ---
 
-# Description 简介
 AutoCAD批量卸载脚本，支持多个版本的静默卸载。
 
 As a system administrator, sometimes it could be hard to stop your user from installing(even they never actually use it) pirated software such as AutoCAD or Photoshop, especially when you are not allowed to use any method to enforce the installation restriction. This batch script is designed to uninstall AutoCAD automatically and quietly.
