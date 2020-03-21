@@ -43,5 +43,4 @@ firewall-cmd --reload
 service zabbix-agent start
 service zabbix-agent status
 #There should be a empty line here, so XShell will sent an Enter for you.
-'''
-
+```
