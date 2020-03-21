@@ -14,10 +14,19 @@ $gray: #666;
 $lightGray: #eee;
 $white: #fff;
 
+// Copy from Hacker theme
+$body-background: #151515 !default; // cod-grey
+$body-foreground: #eaeaea !default; // gallery
+$header: #b5e853 !default; // conifer
+$blockquote-color: #aaa !default; // silver-chalice
+$blockquote-border: #666 !default; // dove-grey
+
+
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+$global-font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 
 // Mobile breakpoints
 @mixin mobile {
