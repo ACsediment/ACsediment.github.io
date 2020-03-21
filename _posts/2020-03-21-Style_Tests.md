@@ -1,5 +1,8 @@
 ---
-layout: default
+layout: post
+title: "Style Tests"
+date: 2020-03-21 10:12:34 -0000
+categories: Frontend
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.

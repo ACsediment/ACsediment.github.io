@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Del Array Element In Java"
 date: 2020-02-18 10:12:34 -0000
 categories: Java
