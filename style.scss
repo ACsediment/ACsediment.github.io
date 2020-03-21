@@ -13,14 +13,21 @@
 /* BASE RULES */
 /**************/
 
+$body-background: $cod-grey !default;
+$body-foreground: $gallery !default;
+$header: $conifer !default;
+$blockquote-color: $silver-chalice !default;
+$blockquote-border: $dove-grey !default;
+// Copy from Hacker theme
+$global-font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 html {
   font-size: 100%;
 }
 
 body {
-	background: $white;
+	background: $body-background;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: $body-foreground;
 }
 
 .container {
@@ -31,8 +38,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: $global-font-family;
+  color: $header;
   font-weight: bold;
 
   line-height: 1.7;
@@ -61,7 +68,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  // color: $gray;
 }
 
 p {
@@ -69,12 +76,10 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #63c0f5;
+  text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
   text-decoration: none;
 	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
 }
 
 ul, ol {
@@ -122,11 +127,11 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
+  color: $white;
   background: $lightGray;
 }
 ::selection {
-  color: $black;
+  color: $white;
   background: $lightGray;
 }
 
@@ -194,7 +199,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $global-font-family;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -212,8 +217,8 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  margin-top: 23px; // @TODO: Vertically middle align;
+  font-family: $global-font-family;
   font-size: 18px;
 
   @include mobile {
