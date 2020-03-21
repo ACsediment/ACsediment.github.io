@@ -1,13 +1,5 @@
 
 .highlight {
-  padding: 7px 7px 7px 10px;
-  border: 1px solid #ddd;
-  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
-  box-shadow: 3px 3px rgba(0,0,0,0.1);
-  margin: 20px 0 20px 0;
-  // overflow: scroll;
-
   $plaintext: $alto;
   $string: $chelsea-cucumber;
   $literal: $chelsea-cucumber;
@@ -26,6 +18,9 @@
   $header: $hippie-blue;
 
   color: $plaintext;
+
+  table td { padding: 5px; }
+  table pre { margin: 0; }
 
   .w {color: $plaintext;}
   .err {color: $error-foreground; background-color: $error-background;}

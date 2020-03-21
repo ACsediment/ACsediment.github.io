@@ -19,6 +19,8 @@ $body-foreground: $gallery;
 $header: $conifer;
 $blockquote-color: $silver-chalice;
 $blockquote-border: $dove-grey;
+$selection:#b5e853;
+$selection-back:rgba(104, 182, 255, 0.5);
 
 html {
   font-size: 100%;
@@ -85,6 +87,10 @@ ul li {
   list-style-image:url('../images/bullet.png');
 }
 
+li {
+  line-height: 1.4 ;
+}
+
 em, i {
   font-style: italic;
 }
@@ -109,12 +115,12 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $grey;
-  background: $lightGrey;
+  color: $selection;
+  background: $selection-back;
 }
 ::selection {
-  color: $grey;
-  background: $lightGrey;
+  color: $selection;
+  background: $selection-back;
 }
 
 // Nicolas Gallagher's micro clearfix hack
