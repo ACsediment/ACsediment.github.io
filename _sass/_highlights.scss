@@ -8,22 +8,22 @@
   margin: 20px 0 20px 0;
   overflow: scroll;
 
-  $plaintext: $alto !default;
-  $string: $chelsea-cucumber !default;
-  $literal: $chelsea-cucumber !default;
-  $keyword: $bouquet !default;
-  $error-foreground: $cod-grey !default;
-  $error-background: $apple-blossom !default;
-  $comment: $grey !default;
-  $preprocessor: $rajah !default;
-  $name-space: $rajah !default;
-  $name-attribute: $hippie-blue !default;
-  $operator: $rajah !default;
-  $keyword-type: $raw-sienna !default;
-  $regex: $gulf-stream !default;
-  $string-escape: $potters-clay !default;
-  $deleted: $apple-blossom !default;
-  $header: $hippie-blue !default;
+  $plaintext: $alto;
+  $string: $chelsea-cucumber;
+  $literal: $chelsea-cucumber;
+  $keyword: $bouquet;
+  $error-foreground: $cod-grey;
+  $error-background: $apple-blossom;
+  $comment: $grey;
+  $preprocessor: $rajah;
+  $name-space: $rajah;
+  $name-attribute: $hippie-blue;
+  $operator: $rajah;
+  $keyword-type: $raw-sienna;
+  $regex: $gulf-stream;
+  $string-escape: $potters-clay;
+  $deleted: $apple-blossom;
+  $header: $hippie-blue;
 
   color: $plaintext;
 

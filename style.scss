@@ -239,13 +239,6 @@ nav {
 }
 
 .post {
-  blockquote {
-    color: $blockquote-color;
-    padding-left: 10px;
-    border-left: 1px dotted $blockquote-border;
-    font-style: italic;
-  }
-
   .comments {
     margin-top: 10px;
   }
@@ -254,6 +247,13 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
+}
+
+blockquote {
+  color: $blockquote-color;
+  padding-left: 10px;
+  border-left: 1px dotted $blockquote-border;
+  font-style: italic;
 }
 
 .wrapper-footer {

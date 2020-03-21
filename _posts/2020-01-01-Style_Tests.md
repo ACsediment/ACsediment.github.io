@@ -35,6 +35,8 @@ Inline markup styles:
 - _italics_
 - **bold**
 - `code()`
+---strikethrough---
+<s>strikeout</s>
 
 > Blockquote
 >> Nested Blockquote
