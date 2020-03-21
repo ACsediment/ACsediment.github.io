@@ -5,11 +5,13 @@ date: 2019-03-12 00:00:00 -0000
 categories: Linux, Ops
 ---
 
-If you are managing a large amount of Linux server with different distribution and a wide range of version, Zabbix agent installation can be an annoying job.
+Short answer is, host all file on your own server, and add the following script to your XShell, it will work at least for CentOS 5-7 with only one-click.
 
-Short answer is, host these file on your own server, and add the following script to your XShell, it will work for CentOS 5-7 with only one-click.
+If you are managing a large amount of Linux servers with different distribution and a wide range of version, Zabbix agent installation can be an annoying job. There are different repo file and GPG KEY file for EL5, EL6 or EL7. And there is firewalld instead of iptables on EL7.
 
-```Bash
+To get the job done with only one script, all GPG KEY file shall be provided. And then modify the repo file, using system variable form the correct URL and key.
+
+```bash
 head -1 /etc/issue ; cat /etc/centos-release
 
 cd /etc/yum.repos.d/
@@ -29,7 +31,7 @@ wget -O zabbix_agentd.conf http://acsediment.github.io/conf/zabbix_agentd.conf
 
 service iptables status
 systemctl status firewalld
-
+#Check firewall status for review.
 
 iptables -I INPUT -p tcp --dport 10050 -j ACCEPT
 service iptables save
@@ -40,6 +42,6 @@ firewall-cmd --reload
 
 service zabbix-agent start
 service zabbix-agent status
-
-
+#There should be a empty line here, so XShell will sent an Enter for you.
 '''
+
