@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "One-for-all Zabbix-agent Installation script"
+title: "One-for-all Zabbix-agent Installation script | Zabbix-agent通用一键安装脚本"
 date: 2019-03-12 00:00:00 -0000
 categories: Linux, Ops
 ---
