@@ -13,11 +13,11 @@
 /* BASE RULES */
 /**************/
 
-$body-background: $cod-grey !default;
-$body-foreground: $gallery !default;
-$header: $conifer !default;
-$blockquote-color: $silver-chalice !default;
-$blockquote-border: $dove-grey !default;
+$body-background: #151515 !default; // cod-grey
+$body-foreground: #eaeaea !default; // gallery
+$header: #b5e853 !default; // conifer
+$blockquote-color: #aaa !default; // silver-chalice
+$blockquote-border: #666 !default; // dove-grey
 // Copy from Hacker theme
 $global-font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 html {
