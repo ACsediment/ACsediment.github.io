@@ -61,7 +61,6 @@ h3 {
 
 h4 {
   font-size: 18px;
-  // color: $gray;
 }
 
 p {
@@ -120,11 +119,11 @@ img {
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $white;
+  color: $gray;
   background: $lightGray;
 }
 ::selection {
-  color: $white;
+  color: $gray;
   background: $lightGray;
 }
 
@@ -190,7 +189,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $header;
   cursor: pointer;
   font-family: $global-font-family;
   font-weight: 300;
@@ -223,14 +222,14 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $gray;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      // color: $blue;
     }
   }
 }
