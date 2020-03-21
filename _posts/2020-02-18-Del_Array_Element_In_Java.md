@@ -5,8 +5,6 @@ date: 2020-02-18 10:12:34 -0000
 categories: Java
 ---
 
-## Del Array Element In Java
-
 I found a peice of code that deletes a element from a Java Array. <br>
 Source: https://blog.csdn.net/tangyaya8/article/details/76595488<br>
 
