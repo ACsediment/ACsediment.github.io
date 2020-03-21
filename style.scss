@@ -22,6 +22,12 @@ $blockquote-border: $dove-grey;
 $selection:#b5e853;
 $selection-back:rgba(104, 182, 255, 0.5);
 
+@mixin media-max-width($max-width) {
+  @media (max-width: $max-width) {
+      @content;
+  }
+}
+
 html {
   font-size: 100%;
 }
