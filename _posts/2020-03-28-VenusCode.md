@@ -62,6 +62,7 @@ function venusCode(inputString,maxColumn){
 			//if maxColumn is too large for input string, cut it in half.
 			maxColumn=inputString.length/2;
 		}
+		if (maxColumn<=0) {maxColumn=1;};
 		var rawCount=Math.ceil(inputString.length/maxColumn);
 
 		for (i=0;i<rawCount;i++) {
