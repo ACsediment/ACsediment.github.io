@@ -19,7 +19,7 @@ VenusCode: Venus rotates clockwise in retrograde rotation, so do this code.
 	</div>
 	<div class="ouputText">
 		<label for="textarea_out">Output text 转换后的文本</label>
-		<textarea id="textarea_out" readOnly οnfοcus="this.select()" οnmοuseοver="this.focus()"></textarea>
+		<textarea id="textarea_out" readOnly onmouseover="this.select()"></textarea>
 	</div>
 </div>
 <style type="text/css">
