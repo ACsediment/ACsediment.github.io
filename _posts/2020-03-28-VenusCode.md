@@ -5,22 +5,21 @@ date: 2020-03-28 20:21:00 -0000
 categories: Test
 ---
 
-金星文：金星与众不同地逆行自转，你的文字也可以。
-
 VenusCode: Venus rotates clockwise in retrograde rotation, so do this code.
+金星文：金星与众不同地逆行自转，你的文字也可以。
 
 <div class="topLayer">
 	<div class="inputText">
-		<label for="textarea_in">在此输入文本</label>
+		<label for="textarea_in">Type your text here 在此输入文本</label>
 		<textarea id="textarea_in"></textarea>
 	</div>
 	<div class="control">
-		<label for="maxColumn_in">最大列数</label>
+		<label for="maxColumn_in">Maximum Column 最大列数</label>
 		<input id='maxColumn_in' type='number' value='7'>
 	</div>
 	<div class="ouputText">
-		<label for="textarea_out">转换后的文本</label>
-		<textarea id="textarea_out" readOnly> </textarea>
+		<label for="textarea_out">Output text 转换后的文本</label>
+		<textarea id="textarea_out" readOnly οnfοcus="this.select()" οnmοuseοver="this.focus()"></textarea>
 	</div>
 </div>
 <style type="text/css">
