@@ -177,27 +177,29 @@ function encode(){
 
 function venusCode(inputString,maxColumn){
 	var outputString="";
-		if (inputString.length<=maxColumn) {
-			//if maxColumn is too large for input string, cut it in half.
-			maxColumn=inputString.length/2;
-		}
-		if (maxColumn<=0) {maxColumn=1;};
-		var rawCount=Math.ceil(inputString.length/maxColumn);
+	var newLine="";
+	if (inputString.length<=maxColumn) {
+		//if maxColumn is too large for input string, cut it in half.
+		maxColumn=inputString.length/2;
+	}
+	if (maxColumn<=0) {maxColumn=1;};
+	var rawCount=Math.ceil(inputString.length/maxColumn);
 
-		for (i=0;i<rawCount;i++) {
-			for (j=0; j<maxColumn; j++) {
-				charIndex=i+j*rawCount;
-				if (charIndex<inputString.length) {
-					theChar=inputString.charAt(charIndex);
-					theChar=processHalfFull(theChar);
-					outputString+=theChar;
-					outputString+="  ";
-				}
+	for (i=0;i<rawCount;i++) {
+		newLine="";
+		for (j=0; j<maxColumn; j++) {
+			charIndex=i+j*rawCount;
+			if (charIndex<inputString.length) {
+				theChar=inputString.charAt(charIndex);
+				theChar=processHalfFull(theChar);
+				newLine+=theChar;
+				newLine+="  ";
 			}
-			outputString+="\n"; //End of this line.
 		}
+		outputString+=newLine.trim()+"\n" //End of this line.
+	}
 
-		return outputString;
+	return outputString;
 }
 
 function processHalfFull (theChar) {
