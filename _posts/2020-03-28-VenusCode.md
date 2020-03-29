@@ -124,7 +124,6 @@ textarea:focus{
 </style>
 <script src="../js/clipboard.min.js"></script>
 <script type="text/javascript">
-
 document.getElementById("textarea_in").addEventListener("input", encode);
 document.getElementById("maxColumn_in").addEventListener("input", encode);
 
@@ -190,9 +189,14 @@ function venusCode(inputString,maxColumn){
 				charIndex=i+j*rawCount;
 				if (charIndex<inputString.length) {
 					theChar=inputString.charAt(charIndex);
+					if(theChar.charCodeAt(0) < 127){
+						//outputString+=" ";
+						theChar=String.fromCharCode(theChar.charCodeAt(0)+65248);
+					}
+					//additional space for half-full not working for WeChat;
+					//convert them to fullwidth;
 					outputString+=theChar;
-					if(theChar.charCodeAt(0) < 127){outputString+=" ";} //additional space for half-full
-					outputString+=" ";
+					outputString+="  ";
 				}
 			}
 			outputString+="\n"; //End of this line.
