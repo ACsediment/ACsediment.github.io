@@ -8,6 +8,8 @@ categories: Test
 VenusCode: Venus rotates clockwise in retrograde rotation, so do this code.
 金星文：金星与众不同地逆行自转，你的文字也可以。
 
+You may check out my [Github page](https://github.com/ACsediment/VenusCode) for this tiny project.
+
 <div class="topLayer">
 	<div class="inputText">
 		<label for="textarea_in">Type your text here 在此输入文本</label>
