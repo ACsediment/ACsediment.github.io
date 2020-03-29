@@ -20,7 +20,7 @@ VenusCode: Venus rotates clockwise in retrograde rotation, so do this code.
 	<div class="ouputText">
 		<label for="textarea_out">Output text 转换后的文本</label>
 		<button class="btn" data-clipboard-target="#textarea_out">
-			<img src="./images/clippy.svg" alt="Copy 复制" style="width: 13px;">
+			<img src="../images/clippy.svg" alt="Copy 复制" style="width: 13px;">
 		</button>
 		<textarea id="textarea_out" readOnly onmouseover="this.select()"></textarea>
 	</div>
@@ -120,7 +120,7 @@ textarea:focus{
     border-bottom-color: rgba(255,255,255,.8)
 }
 </style>
-<script src="./js/clipboard.min.js"></script>
+<script src="../js/clipboard.min.js"></script>
 <script type="text/javascript">
 
 document.getElementById("textarea_in").addEventListener("input", encode);
